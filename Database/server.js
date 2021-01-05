@@ -32,7 +32,7 @@ app.get('/',(req,res)=>{
 const PORT = process.env.PORT || 4000
 app.listen(PORT,()=>{
     console.log(`Server is running on the port ${PORT}`);
-    mongoose.connect('mongodb://localhost/money-app',
+    mongoose.connect('mongodb://localhost/users',
     {useNewUrlParser : true},
     ()=>{
         console.log(`Database is connected Successfully...`);
